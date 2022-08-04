@@ -8,6 +8,10 @@
 body {
     overflow: auto;
     font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.589), rgba(255, 153, 0, 0.589)), url(img/white-waves-background-free-vector.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -67,7 +71,7 @@ h3 {
 }
 
 .star_review {
-    background: rgba(159, 102, 161, 0.103);
+    background: rgba(255, 255, 255, 0.103);
     padding: 20px;
     border-radius: 5px;
     display: flex;
@@ -89,15 +93,16 @@ h3 {
 .anne_wallace_box {
     background: rgb(66, 17, 68);
     padding: 25px;
-    border-radius: 8px;    
+    border-radius: 8px;   
 }
 
 /* Irene Roberts */
 
 .irene_roberts_box {
-    background: rgb(255, 255, 255);
+    background: rgb(243, 243, 243);
     padding: 25px;
     border-radius: 8px;
+    box-shadow: 1px 1px 10px -6px #000;
 }
 
 .irene_roberts_box .light-ver {
@@ -232,33 +237,32 @@ h3 {
 
 
 
-        /* Bottom Grid */
+    /* Bottom Grid */
 
-        .right {
+        .btm_box {
             display: grid;
-            gap: 13px;
+            gap: 19px;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: .1fr .1fr 1fr 1fr .1fr .1fr;
             grid-template-areas: 
-                "sr1 sr1 sr1 sr1 . ."
-                ". sr2 sr2 sr2 sr2 ."
-                ". . sr3 sr3 sr3 sr3";
+                "csb1 . ."
+                "csb1 irb2 ."
+                "csb1 irb2 awb3"
+                "csb1 irb2 awb3"
+                ". irb2 awb3"
+                ". . awb3";
         }
     
-        .sr_1 {
-            grid-area: sr1;
+        .csb {
+            grid-area: csb1;
         }
     
-        .sr_2 {
-            grid-area: sr2;
+        .irb {
+            grid-area: irb2;
         }
     
-        .sr_3 {
-            grid-area: sr3;
-        }
-    
-        .padding-right {
-            padding-right: 25px;
+        .awb {
+            grid-area: awb3;
         }
     
     

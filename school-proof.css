@@ -71,8 +71,8 @@ h3 {
 }
 
 .star_review {
-    background: rgba(255, 255, 255, 0.103);
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.767);
+    padding: 5px 20px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -158,11 +158,90 @@ h3 {
     }
 }
 
+/* --- Second Media Query --- */
 
-@media (min-width: 501px) {
+@media (min-width: 501px) and (max-width: 1120px) {
     body {
         padding: 30px 100px;
     }
+
+    .container {
+        width: 100%;
+        max-width: 750px;
+        background: rgba(255, 255, 255, 0.315);
+        border-radius: 10px;
+        box-shadow: 1px 1px 20px -15px;
+        padding: 80px 50px;
+    }
+
+    .top_box {
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+
+    .star_review {
+        background: rgba(255, 255, 255, 0.767);
+        padding: 8px 30px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        max-width: 360px;
+    }
+
+    
+    .left {
+        flex: 1;
+        padding-right: 40px;
+    }
+
+    .right {
+        flex: 1;
+        padding-left: 40px;
+        float: right;
+    }
+
+    /* Bottom Grid */
+
+    .btm_box {
+        display: grid;
+        gap: 19px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat (2, 1fr);
+        grid-template-areas: 
+            "csb1 awb3"
+            "irb2 irb2 ";
+    }
+
+    .csb {
+        grid-area: csb1;
+    }
+
+    .irb {
+        grid-area: irb2;
+    }
+
+    .awb {
+        grid-area: awb3;
+    }
+
+
+    /* End of Bottom Grid */
+
+
+
+}
+
+
+@media (min-width: 1121px) {
+    body {
+        padding: 30px 100px;
+    }
+
     .top_box {
         display: flex;
         align-items: center;
@@ -215,7 +294,7 @@ h3 {
 
     
     .star_review {
-        background: rgba(159, 102, 161, 0.103);
+        background: rgba(255, 255, 255, 0.767);
         padding: 8px 30px;
         border-radius: 5px;
         display: flex;

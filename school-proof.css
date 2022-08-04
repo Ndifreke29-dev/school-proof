@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+body {
+    overflow: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Typography */
+h1 {
+    color: rgb(66, 17, 68);
+    letter-spacing: -2.5px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 2.4125rem;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+p {
+    color: rgb(66, 17, 68);
+    line-height: 25px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.reviews {
+    color: rgb(66, 17, 68);
+    font-weight: bold;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: rgb(194, 61, 199);
+    font-size: 13.2px;
+}
+
+.white-lettering {
+    color: #fff;
+    text-align: left;
+    padding-bottom: 0;
+}
+
+
+/* --- Box Styling --- */
+
+.container {
+    padding: 20px;
+}
+
+.right {
+    display: grid;
+    gap: 20px;
+    
+}
+
+.star_review {
+    background: rgba(159, 102, 161, 0.103);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+
+/* --- Bottom Box Styling --- */
+
+.btm_box {
+    display: grid;
+    gap: 20px;
+    
+}
+
+.colton_smith_box,
+.irene_roberts_box,
+.anne_wallace_box {
+    background: rgb(66, 17, 68);
+    padding: 25px;
+    border-radius: 8px;
+    
+}
+
+.img_name_box {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+
+/* --- Image Styling --- */
+.persons {
+    width: 50%;
+    border-radius: 50%;
+    border: solid 2px #fff;
+}
